@@ -1,0 +1,69 @@
+Practical No:6
+
+public class Contact
+{
+    public String name;
+    public String mobile;
+    public String email;
+    public int age;
+
+    public Contact() //Default Constructor
+    {
+        this.name="";
+        this.mobile="";
+        this.email="";
+        this.age=0;
+
+    }
+    public Contact(String name,String mobile,String email,int age)	//Parameterize constructor
+    {
+        this.name=name;
+        this.mobile=mobile;
+        this.email=email;
+        this.age=age;
+    }
+    public Contact(Contact c) //Copy Constructor
+    {
+        this.name=c.name;
+        this.mobile=c.mobile;
+        this.email=c.email;
+        this.age=c.age;
+    }
+
+    public void show()
+    {
+        System.out.println("\nName="+this.name);
+        System.out.println("Mobile="+this.mobile);
+        System.out.println("Email="+this.email);
+        System.out.println("Age="+this.age);
+    }
+    public static void main(String[] args)
+    {
+        Contact c = new Contact(); //using default constructor
+        c.show();
+        Contact c1 = new Contact("Vedika","7769656589","test@gmail.com",20); //using Parameter constructor
+        c1.show();
+
+        Contact c2 = new Contact(c1); //using copy constructor
+        c2.show();
+    }
+}
+O/P:
+Enter number of Student=2
+*1*
+Enter Student Roll Number=5
+Enter Student name=vedika
+Enter Student DOB=12/4/03
+*2*
+Enter Student Roll Number=2
+Enter Student name=om
+Enter Student DOB=13/3/04
+
+*****Show all Students**
+Roll Number  =5
+Student Name =vedika
+Student DOB  =12/4/03
+
+Roll Number  =2
+Student Name =om
+Student DOB  =13/3/04

@@ -1,0 +1,34 @@
+Practical no:13
+package command.line.apps;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+public class Stream {
+    public static void main(String[] args) {
+        // Create a Scanner to take input from the user
+        Scanner scanner = new Scanner(System.in);
+        // Prompt the user for input
+        System.out.print("Enter text to write to the file: ");
+        String userInput = scanner.nextLine();
+        // Specify the file path
+        String filePath = "output.txt";
+        // Use BufferedWriter to write the user input to the text file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            // Write the user input to the file
+            writer.write(userInput);
+            System.out.println("Text has been written to the file successfully.");
+        } catch (IOException e) {
+            System.err.println("An error occurred while writing to the file: " + e.getMessage());
+        } finally {
+            // Close the scanner
+            scanner.close();
+        }
+    }
+}
+O/P:
+C:\Users\DELL\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=56234:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath D:\java\out\production\java command.line.apps.Stream
+Enter text to write to the file: efe
+Text has been written to the file successfully.
+
+Process finished with exit code 0

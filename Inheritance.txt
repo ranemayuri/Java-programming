@@ -1,0 +1,29 @@
+Practical no:9
+
+class Animal{
+    String name;
+    public void eat(){
+        System.out.println("I can eat");
+    }
+}
+class Dog extends Animal{
+    public void display(){
+        System.out.println("My name is " +name);
+    }
+}
+class main{
+    public static void main(String args[])
+    {
+        Dog d=new Dog();
+        d.name="Mayu";
+        d.display();
+        d.eat();
+    }
+}
+
+output:
+C:\Users\DELL\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=50740:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath D:\java\out\production\java main
+My name is Mayu
+I can eat
+
+Process finished with exit code 0

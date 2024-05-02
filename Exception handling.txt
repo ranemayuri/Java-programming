@@ -1,0 +1,28 @@
+Practical no:10
+
+package exceptionhandling;
+import java.util.Scanner;
+public class ExceptionHandling{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number for Division:");
+        Integer n = sc.nextInt();
+        Integer div = 0;
+        try {
+            div = 100 / n;
+        } catch (ArithmeticException e) {
+            System.out.println("the number" + n + "cannot divisible by 100");
+            e.printStackTrace();
+        }
+        finally {
+            System.out.println("divisions=" + div);
+        }
+    }
+}
+output:
+C:\Users\DELL\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=51227:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath D:\java\out\production\java exceptionhandling.ExceptionHandling
+Enter number for Division:
+6
+divisions=16
+
+Process finished with exit code 0

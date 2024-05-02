@@ -1,0 +1,128 @@
+Practical no:
+
+
+public class StringExample {
+    public static void main(String[] args)
+    {
+        String name ="Test";
+        System.out.println("Length function="+name.length());
+        String msg ="ssbt college of engineering";
+        String[] strArray=msg.split("");
+        for(String s: strArray)
+        {
+            System.out.println(s);
+        }
+        String cityNames = "Jalgaon,Dhule,Pune,Kalyan";
+        System.out.println("\nBefore split="+cityNames);
+        String[] cityArray =cityNames.split("");
+        System.out.println("\nAfter split=");
+        for(String s:cityArray)
+        {
+            System.out.println(s);
+        }
+        String str1="Java programming";
+        String str2="Java programming";
+        String str3="Java programming";
+        System.out.println(str1.compareTo(str2));
+        System.out.println(str1.compareTo(str3));
+        System.out.println(str3.compareTo(str1));
+        System.out.println("\n3.replace()");
+        String msg1 = "Happy wednesday";
+        System.out.println("before replace="+msg1);
+        System.out.println("after replace="+msg1.replace( "wednesday","Thursday"));
+        System.out.println("\n4.substring()");
+        String msg2 = msg1.substring(0,5);
+        System.out.println(msg2);
+        System.out.println("\n5.indexOf()");
+        System.out.println("IndexOf w in msg1="+msg1.indexOf("w"));
+        System.out.println("\n6.contain() ");
+        System.out.println("msg1 contain Happy="+ msg1.contains("Happy"));
+        System.out.println("\n7.charAt()");
+        System.out.println("charAt index 4="+msg1.charAt(4));
+        System.out.println("\n8.trim()");
+        String msg4 = "Good Morning everyone";
+        System.out.println("trim all spaces="+msg4.trim());
+    }
+
+}
+O/P:
+Length function=4
+s
+s
+b
+t
+ 
+c
+o
+l
+l
+e
+g
+e
+ 
+o
+f
+ 
+e
+n
+g
+i
+n
+e
+e
+r
+i
+n
+g
+
+Before split=Jalgaon,Dhule,Pune,Kalyan
+
+After split=
+J
+a
+l
+g
+a
+o
+n
+,
+D
+h
+u
+l
+e
+,
+P
+u
+n
+e
+,
+K
+a
+l
+y
+a
+n
+0
+0
+0
+
+3.replace()
+before replace=Happy wednesday
+after replace=Happy Thursday
+
+4.substring()
+Happy
+
+5.indexOf()
+IndexOf w in msg1=6
+
+6.contain() 
+msg1 contain Happy=true
+
+7.charAt()
+charAt index 4=y
+
+8.trim()
+trim all spaces=Good Morning everyone
+

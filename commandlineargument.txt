@@ -1,0 +1,49 @@
+Practical no:3
+
+public class Command
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Below are arguments pass to program");
+		for(String a:args)
+		{
+			System.out.println(a);
+
+		}
+	}
+}
+output:
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL\OneDrive\Desktop\java>javac Command.java
+C:\Users\DELL\OneDrive\Desktop\java>java Command
+Below are arguments pass to program
+
+public class CommandLineArgs {
+ public static void main(String[] args) {
+ 
+ if (args.length == 0) 
+ {
+ System.out.println("No command line arguments provided.");
+ } 
+ else
+ {
+ System.out.println("Command line arguments:");
+ for (int i = 0; i < args.length; i++) 
+ {
+ System.out.println("Argument " + (i + 1) + ": " + args[i]);
+ }
+ }
+ }
+}
+o/p:
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL\OneDrive\Desktop\java>javac CommandLineArgs.java
+
+C:\Users\DELL\OneDrive\Desktop\java>java CommandLineArgs
+No command line arguments provided.
+
+C:\Users\DELL\OneDrive\Desktop\java>

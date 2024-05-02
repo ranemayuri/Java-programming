@@ -1,0 +1,16 @@
+Practical no:8
+
+public class Wrapper {
+    public static void main(String args[]){
+        Integer a=new Integer(3);
+        int i=a.intValue();
+        int j=a;
+        System.out.println(a+" "+i+" "+j);
+    }
+}
+
+output:
+C:\Users\DELL\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=50563:C:\Users\DELL\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath D:\java\out\production\java Wrapper
+3 3 3
+
+Process finished with exit code 0
