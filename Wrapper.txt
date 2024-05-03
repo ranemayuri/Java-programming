@@ -1,0 +1,28 @@
+Wrapper class
+
+public class WrapperClassDemo {
+ public static void main(String[] args) {
+ // Example of Integer wrapper class
+ Integer intWrapper = new Integer(10); // Boxing
+ int intValue = intWrapper.intValue(); // Unboxing
+ System.out.println("Integer Wrapper Value: " + intWrapper);
+ System.out.println("Unboxed Integer Value: " + intValue);
+ // Example of Double wrapper class
+ Double doubleWrapper = new Double(3.14); // Boxing
+ double doubleValue = doubleWrapper.doubleValue(); // Unboxing
+ System.out.println("Double Wrapper Value: " + doubleWrapper);
+ System.out.println("Unboxed Double Value: " + doubleValue);
+ // Autoboxing and autounboxing
+ Integer num1 = 20; // Autoboxing
+ int num2 = num1; // Autounboxing
+ System.out.println("Autoboxing and Autounboxing: " + num1 + " " + num2);
+ // Parsing strings to primitive types using wrapper classes
+ String str = "123";
+ int parsedValue = Integer.parseInt(str);
+ System.out.println("Parsed Integer Value: " + parsedValue);
+ // Parsing strings to wrapper objects
+ String str2 = "3.14159";
+ Double parsedDouble = Double.valueOf(str2);
+ System.out.println("Parsed Double Wrapper Value: " + parsedDouble);
+ }
+}
